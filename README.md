@@ -1,2 +1,0 @@
-# IntroSite.github.io
-Portfolio
