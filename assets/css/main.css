@@ -935,7 +935,55 @@
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 .5em black;
+				width: 50%;
 			}
+		#main .avatar button.rightEyeBtn
+		{
+			position: absolute;
+			top: 39%;
+			left:38%;
+			border-radius: 80px;
+			width: 57px;
+			height: 30px;
+			background-color: white;
+			transform: translate(-50%, -50%) skew(22deg,15deg);
+			-ms-transform: translate(-50%, -50%);			
+			border-color: darkgray;			
+			color: white !important;
+			content-visibility: hidden;
+		}
+		
+		#main .avatar button.rightEyeBtn > span{
+			display: inline-block;
+			transform:skewX(-20deg);
+		}
+
+		#main .avatar button.rightEyeBtn:hover
+		{
+			background-color: black;
+			color: white;
+			content: 'Right Eye';
+			content-visibility:visible;
+		}
+
+		#main .avatar button.leftEyeBtn
+		{
+			position: absolute;
+			top: 39%;
+			left:62%;
+			border-radius: 80px;
+			width: 57px;
+			height: 30px;
+			background-color: white;
+			transform: translate(-50%, -50%) skew(-22deg, -15deg);
+			-ms-transform: translate(-50%, -50%);
+			border-color: darkgray;
+			color: white !important;
+		}
+		#main .avatar button.leftEyeBtn:hover
+		{
+			background-color: black;
+		}
 
 			#main .avatar:before {
 				content: '';
@@ -1053,3 +1101,4 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+	 
